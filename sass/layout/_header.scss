@@ -1,0 +1,273 @@
+header {
+  margin: 0 0 40px 0;
+  background: #fff;
+  .upper-header {
+    background: #292929;
+    padding: 14px 0 15px 0;
+    ul {
+      float: left;
+      li {
+        display: inline-block;
+        a {
+          color: #fff;
+          font-size: 11px;
+          font-weight: 600;
+          letter-spacing: 1px;
+        }
+      }
+      li:first-child a {
+        border-right: 1px solid #fff;
+        display: block;
+        padding: 0 5px 0 0;
+        margin: 0 2px 0 0;
+        line-height: 10px;
+      }
+    }
+    ul.lang {
+      margin: 0 10px 0 0;
+      float: right;
+      li a {
+        border: none;
+      }
+       ul {
+         top: 25px;
+         padding: 10px;
+         li {
+           display: block;
+           margin: 0 0 5px 0;
+         }
+         a {
+           color: $dark-blue;
+         }
+       }
+    }
+    ul.social-media {
+      float: right;
+      li {
+        display: inline-block;
+        @include text-indent;
+        margin: 0 10px;
+        a {
+          display: block;
+          border: none;
+        }
+      }
+      li:last-child {
+        margin-right: 0;
+      }
+      .fb {
+        background: url('../img/icons.png') no-repeat -9px -295px;
+      	width: 9px;
+      	height: 16px;
+      }
+      .tw {
+        background: url('../img/icons.png') no-repeat -9px -327px;
+      	width: 15px;
+      	height: 13px;
+      }
+      .yt {
+        background: url('../img/icons.png') no-repeat -10px -356px;
+      	width: 17px;
+      	height: 13px;
+      }
+      .in {
+        background: url('../img/icons.png') no-repeat -10px -388px;
+      	width: 14px;
+      	height: 15px;
+      }
+    }
+  }
+  .lower-header {
+    .logo {
+      display: block;
+      float: left;
+      background: url('../img/icons.png') no-repeat -9px -145px;
+    	width: 201px;
+    	height: 51px;
+      margin: 25px 0 0 0;
+      @include text-indent;
+    }
+    nav {
+      float: right;
+      li {
+        display: inline-block;
+        a {
+          display: inline-block;
+          text-align: center;
+          text-transform: uppercase;
+          font-size: 17px;
+          font-weight: 500;
+          color: $dark-blue;
+          font-family: 'MyriadPro', sans-serif;
+          letter-spacing: 1px;
+          padding: 25px 0 35px 0;
+          margin: 0 35px 0 0;
+          i {
+            display: block;
+            margin-top: 10px;
+          }
+        }
+        a.active, a:hover {
+          color: $red-color;
+          font-weight: 600;
+          border-top: 3px solid $red-color;
+        }
+      }
+    }
+    .dropdown {
+      margin: 25px 0 0 0;
+      & > a {
+        line-height: 60px;
+        font-size: 15px;
+        color: $dark-blue;
+        span {
+          color: $orange-color;
+          font-size: 16px;
+          font-weight: 700;
+        }
+        &::after {
+          margin: -3px 0 0 6px;
+        }
+      }
+      i {
+        background: url(../img/icons.png) no-repeat -8px -216px;
+        width: 50px;
+        height: 55px;
+        display: block;
+        float: left;
+        margin: 0 10px 0 0;
+      }
+      .dropdown-menu {
+        padding: 10px;
+        left: auto;
+        right: 0;
+        a {
+          margin: 0 0 5px 0;
+          display: block;
+          color: $dark-blue;
+        }
+      }
+    }
+    .container {
+      position: relative;
+      padding-right: 100px;
+    }
+    .sb-search {
+        position: absolute;
+        right: 15px;
+        width: 0%;
+        min-width: 60px;
+        height: 107px;
+        float: right;
+        overflow: hidden;
+        -webkit-transition: width 0.3s;
+        -moz-transition: width 0.3s;
+        transition: width 0.3s;
+        -webkit-backface-visibility: hidden;
+    }
+
+    .sb-search-input {
+        height: 107px;
+        position: absolute;
+        top: 0;
+        right: 0px;
+        border: none;
+        outline: none;
+        background: #fff;
+        width: 100%;
+        margin: 0;
+        z-index: 10;
+        padding: 20px 65px 20px 28px;
+        font-family: inherit;
+        font-size: 20px;
+        color: #2c3e50;
+    }
+
+    input[type="search"].sb-search-input {
+        -webkit-appearance: none;
+        -webkit-border-radius: 0px;
+    }
+    .sb-search-input::-webkit-input-placeholder {
+        color: $dark-blue;
+    }
+
+    .sb-search-input:-moz-placeholder {
+        color: $dark-blue;
+    }
+
+    .sb-search-input::-moz-placeholder {
+        color: $dark-blue;
+    }
+
+    .sb-search-input:-ms-input-placeholder {
+        color: $dark-blue;
+    }
+
+    .sb-icon-search,
+    .sb-search-submit  {
+        width: 60px;
+        height: 60px;
+        display: block;
+        position: absolute;
+        right: 0;
+        top: 0;
+        padding: 0;
+        margin: 0;
+        line-height: 60px;
+        text-align: center;
+        cursor: pointer;
+    }
+
+    .sb-search-submit {
+        background: #fff; /* IE needs this */
+        -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)"; /* IE 8 */
+        filter: alpha(opacity=0); /* IE 5-7 */
+        opacity: 0;
+        color: transparent;
+        color:red;
+        border: none;
+        outline: none;
+        z-index: -1;
+    }
+
+    .sb-icon-search {
+        color: #fff;
+        background: #d0e0ec;
+        z-index: 90;
+        height: 107px;
+        font-size: 22px;
+        font-family: 'icomoon';
+        speak: none;
+        font-style: normal;
+        font-weight: normal;
+        font-variant: normal;
+        text-transform: none;
+        -webkit-font-smoothing: antialiased;
+    }
+
+    .sb-icon-search i {
+      margin: 40px 0 0 0;
+      color: $dark-blue;
+    }
+
+    .sb-icon-search:before {
+        content: "";
+    }
+
+    .sb-search.sb-search-open,
+    .no-js .sb-search {
+        width: 100%;
+    }
+
+    .sb-search.sb-search-open .sb-icon-search,
+    .no-js .sb-search .sb-icon-search,
+    .sb-search.sb-search-open .sb-icon-search i {
+        background: $dark-blue;
+        color: #fff;
+        z-index: 11;
+    }
+  }
+  #menutoggle {
+    display: none;
+  }
+}

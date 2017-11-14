@@ -1,0 +1,53 @@
+footer {
+  background-color: $dark-blue;
+  text-align: center;
+  border-top: 3px solid #c1cbd3;
+  padding: 35px 0 45px 0;
+  margin-top: 60px;
+  .logo {
+    background: url('../img/icons.png') no-repeat -8px -10px;
+  	width: 290px;
+  	height: 111px;
+    text-indent: -99999px;
+    display: inline-block;
+  }
+  hr {
+    width: 98px;
+    background: #c8c8c8;
+  }
+  ul {
+    li {
+      display: inline-block;
+      @include text-indent;
+      margin: 0 10px;
+      a {
+        display: block;
+      }
+    }
+    .fb {
+      background: url('../img/icons.png') no-repeat -9px -295px;
+    	width: 9px;
+    	height: 16px;
+    }
+    .tw {
+      background: url('../img/icons.png') no-repeat -9px -327px;
+    	width: 15px;
+    	height: 13px;
+    }
+    .yt {
+      background: url('../img/icons.png') no-repeat -10px -356px;
+    	width: 17px;
+    	height: 13px;
+    }
+    .in {
+      background: url('../img/icons.png') no-repeat -10px -388px;
+    	width: 14px;
+    	height: 15px;
+    }
+  }
+  p {
+    font-size: 15px;
+    color: #fff;
+    margin-top: 20px;
+  }
+}

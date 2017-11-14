@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>Book2Trip - Profile</title>
+
+    <!-- CSS -->
+    <link href="dist/css/bootstrap/bootstrap.css" rel="stylesheet">
+    <link href="dist/css/style.min.css" rel="stylesheet">
+
+    <!-- font -->
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600,700" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Maven+Pro:400,500,700" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+  </head>
+
+  <body>
+
+    <!-- header -->
+    <header>
+
+      <div class="upper-header">
+        <div class="container">
+
+          <ul>
+            <li><a href="#">FAQ</a></li>
+            <li><a href="#">CONTACT US</a></li>
+          </ul>
+
+          <ul class="social-media">
+            <li class="fb"><a href="#">fb</a></li>
+            <li class="tw"><a href="#">tw</a></li>
+            <li class="yt"><a href="#">yt</a></li>
+            <li class="in"><a href="#">in</a></li>
+          </ul>
+
+          <ul class="lang">
+              <li class="dropdown"><a href="#" class="dropdown-toggle" data-toggle="dropdown"><i></i>Language</a>
+                  <ul class="dropdown-menu">
+                      <li><a href="#">English</a></li>
+                      <li><a href="#">Espanish</a></li>
+                      <li><a href="#">French</a></li>
+                  </ul>
+              </li>
+          </ul>
+
+        </div>
+      </div>
+
+      <div class="lower-header">
+        <div class="container">
+
+          <a class="logo" href="#">logo</a>
+          <div id="sb-search" class="sb-search " >
+            <form>
+                <input class="sb-search-input " onkeyup="buttonUp();" placeholder="Enter your search term..." onblur="monkey();" type="search" value="" name="search" id="search">
+                <input class="sb-search-submit" type="submit"  value="">
+                <span class="sb-icon-search"><i class="fa fa-search"></i></span>
+            </form>
+          </div>
+          <div class="pull-right">
+            <ul class="nav pull-right">
+                <li class="dropdown"><a href="#" class="dropdown-toggle" data-toggle="dropdown"><i></i>Hi <span>User</span></a>
+                    <ul class="dropdown-menu">
+                        <li><a href="/user/preferences">Preferences</a></li>
+                        <li><a href="/help/support">Contact Support</a></li>
+                        <li><a href="/auth/logout">Logout</a></li>
+                    </ul>
+                </li>
+            </ul>
+          </div>
+          <nav id="menu" class="header_navigation nav">
+            <ul>
+              <li><a class="active" href="#">home<i class="fa fa-home"></i></a></li>
+              <li><a href="#">about us<i class="fa fa-users"></i></a></li>
+              <li><a href="#">our services<i class="fa fa-graduation-cap"></i></a></li>
+              <li><a href="#">new &#38; events<i class="fa fa-newspaper-o"></i></a>  </li>
+            </ul>
+          </nav>
+
+        </div>
+      </div>
+
+    </header>
+    <!-- end header -->
+
+    <!-- content -->
+    <div class="content">
+      <div class="container">
+        <div class="row">
+
+          <!-- sidebar -->
+          <div id="sidebar" class="col-lg-3 col-md-3">
+              <ul>
+                <li class="active"><a href="#"><i class="fa fa-file-text-o"></i>My wall</a></li>
+                <li><a href="#"><i class="fa fa-address-card"></i>Profile</a></li>
+                <li>
+                  <a href="#">
+                    <i class="fa fa-envelope"></i>
+                    <i class="notification">0</i>
+                    Messages
+                  </a>
+                </li>
+                <li><a href="#"><i class="fa fa-graduation-cap"></i>Colleagues</a></li>
+                <li>
+                  <a href="#">
+                    <i class="fa fa-graduation-cap"></i>
+                    <i class="plus">+</i>
+                    <i class="notification">6</i>
+                    Colleagues requests
+                  </a>
+                </li>
+                <li><a href="#"><i class="fa fa-users"></i>My groups</a></li>
+                <li><a href="#"><i class="fa fa-comments"></i>Chat</a></li>
+              </ul>
+          </div>
+
+          <!-- posts -->
+          <div id="posts" class="col-lg-6 col-md-12 col-sm-12 col-xs-12">
+
+            <!-- add new post -->
+            <div class="add-new-post">
+              <h1><i class="fa fa-pencil-square-o"></i>New Post</h1>
+              <form>
+
+                <div class="form-group">
+                  <textarea name="name" id="postText" placeholder="Share your experience with us ..."></textarea>
+                </div>
+
+                <div class="form-group image-video">
+                  <input type="file" name="inputFileToLoad[]" id="inputFileToLoad" class="inputfile" data-multiple-caption="{count} files selected" multiple />
+        					<label for="inputFileToLoad">
+                      <i></i>
+                      <span>
+                      </span>
+                  </label>
+                  <a class="video" href="#"></a>
+                </div>
+
+                <button type="button" id="load" class="btn btn-default sign-globe">Go</button>
+
+              </form>
+            </div>
+
+            <div id="newPosts">
+
+            </div>
+
+            <!-- single post -->
+            <article class="single-post">
+              <div class="post-header clearfix">
+                <div>
+                  <img src="dist/img/user.png" alt="">
+                  <h2>User Name</h2>
+                  <h3>University of alberta</h3>
+                </div>
+                <p><i class="fa fa-calendar"></i>17 Min ago</p>
+              </div>
+              <div class="post-content">
+                <h1>Do you think it’s important to study abroad nowdays ?</h1>
+                <img src="dist/img/posts/post-1.jpg" alt="">
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua....</p>
+              </div>
+              <div class="post-footer clearfix">
+                  <a class="comment" href="#"><i class="fa fa-commenting"></i>Comment</a>
+                  <a class="like" href="#"><i class="fa fa-smile-o"></i>like</a>
+                  <a class="more" href="#">Read More<i>+</i></a>
+              </div>
+            </article>
+
+            <!-- single post -->
+            <article class="single-post">
+              <div class="post-header clearfix">
+                <div>
+                  <img src="dist/img/user.png" alt="">
+                  <h2>User Name</h2>
+                  <h3>University of alberta</h3>
+                </div>
+                <p><i class="fa fa-calendar"></i>17 Nov, 2016</p>
+              </div>
+              <div class="post-content">
+                <h1>Only 3 simple steps to apply for alberta university</h1>
+                <img src="dist/img/posts/post-2.jpg" alt="">
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua....</p>
+              </div>
+              <div class="post-footer clearfix">
+                  <a class="comment" href="#"><i class="fa fa-commenting"></i>Comment</a>
+                  <a class="like" href="#"><i class="fa fa-smile-o"></i>like</a>
+                  <a class="more" href="#">Read More<i>+</i></a>
+              </div>
+            </article>
+
+            <!-- single post -->
+            <article class="single-post">
+              <div class="post-header clearfix">
+                <div>
+                  <img src="dist/img/user.png" alt="">
+                  <h2>User Name</h2>
+                  <h3>University of alberta</h3>
+                </div>
+                <p><i class="fa fa-calendar"></i>17 Nov, 2016</p>
+              </div>
+              <div class="post-content">
+                <h1>How to register for toronto university</h1>
+                <iframe width="100%" height="315" src="https://www.youtube.com/embed/qt3We3ZREGw" frameborder="0" allowfullscreen></iframe>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua....</p>
+              </div>
+              <div class="post-footer clearfix">
+                  <a class="comment" href="#"><i class="fa fa-commenting"></i>Comment</a>
+                  <a class="like" href="#"><i class="fa fa-smile-o"></i>like</a>
+                  <a class="more" href="#">Read More<i>+</i></a>
+              </div>
+            </article>
+
+            <!-- single post -->
+            <article class="single-post">
+              <div class="post-header clearfix">
+                <div>
+                  <img src="dist/img/user.png" alt="">
+                  <h2>User Name</h2>
+                  <h3>University of alberta</h3>
+                </div>
+                <p><i class="fa fa-calendar"></i>17 Nov, 2016</p>
+              </div>
+              <div class="post-content">
+                <h1>Achieving your goals by thinking out of the box</h1>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua....</p>
+              </div>
+              <div class="post-footer clearfix">
+                  <a class="comment" href="#"><i class="fa fa-commenting"></i>Comment</a>
+                  <a class="like" href="#"><i class="fa fa-smile-o"></i>like</a>
+                  <a class="more" href="#">Read More<i>+</i></a>
+              </div>
+            </article>
+
+          </div>
+
+          <!-- adds -->
+          <div id="adds" class="col-lg-3 col-md-3">
+            <img src="dist/img/adds/add-1.jpg" alt="">
+            <img src="dist/img/adds/add-2.jpg" alt="">
+            <img src="dist/img/adds/add-3.jpg" alt="">
+          </div>
+
+        </div>
+      </div>
+    </div>
+    <!-- end content -->
+
+    <!-- footer -->
+    <footer>
+
+      <div class="container">
+
+        <a class="logo" href="#">logo</a>
+        <hr>
+        <ul>
+          <li class="fb"><a href="#">fb</a></li>
+          <li class="tw"><a href="#">tw</a></li>
+          <li class="yt"><a href="#">yt</a></li>
+          <li class="in"><a href="#">in</a></li>
+        </ul>
+        <p>&#169;2016 All Rights Reserved</p>
+
+      </div>
+
+    </footer>
+    <!-- end footer -->
+
+  </body>
+
+  <!-- main scripts -->
+  <script src="dist/js/jquery/jquery-3.1.1.min.js"></script>
+  <script src="dist/js/bootstrap/bootstrap.min.js"></script>
+
+  <script src="dist/js/bundle.js"></script>
+
+
+  <script type="text/javascript">
+      (function(e, t, n) {
+        var r = e.querySelectorAll("html")[0];
+        r.className = r.className.replace(/(^|\s)no-js(\s|$)/, "$1js$2")
+      })(document, window, 0);
+  </script>
+
+  <script type="text/javascript">
+
+  </script>
+
+</html>

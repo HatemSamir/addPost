@@ -1,0 +1,98 @@
+@media (min-width: 1201px) {
+  .container {
+    width: 1200px; } }
+
+@media (max-width: 1200px) {
+  #sidebar ul li a {
+    font-size: 14px; }
+  header .lower-header nav li a {
+    margin: 0 25px 0 0; }
+  .lower-header .container {
+    width: 100%; }
+  #sidebar ul {
+    padding: 10px 15px; } }
+
+@media (max-width: 991px) {
+  #sidebar, #adds,
+  #sb-search, .upper-header, .pull-right {
+    display: none; }
+  header {
+    background: transparent; }
+  header .lower-header .logo {
+    position: absolute;
+    left: 41%;
+    z-index: 999999;
+    background-size: 270px;
+    background-position: 0px -110px;
+    top: -20px; }
+  header .lower-header nav li a {
+    padding: 20px 0 20px;
+    border: none;
+    width: 100%; }
+    header .lower-header nav li a:hover {
+      font-weight: 500;
+      color: #fff;
+      border: none; }
+    header .lower-header nav li a.active {
+      border: none; }
+  header #menutoggle {
+    display: block; }
+  .nav .navtoogle {
+    display: block;
+    background: url(../img/menu.png) no-repeat;
+    background-size: 20px;
+    background-position: 16px 27px;
+    padding: 17px 0 15px 25px;
+    width: 100px;
+    border: none;
+    cursor: pointer;
+    color: #fff; }
+    .nav .navtoogle i {
+      color: #1a364d;
+      font-size: 30px; }
+  .nav .navtoogle.active {
+    background-color: #fff; }
+  .nav ul {
+    text-align: center; }
+  .nav a {
+    padding: 25px 0; }
+  .nav a:hover {
+    background: #394982; }
+  .js .nav .active + ul {
+    background-color: #fff;
+    position: relative;
+    z-index: 9999999;
+    border-top: 3px solid #ff4638;
+    border-bottom: 3px solid #ff4638; }
+  header {
+    padding: 0 0 10px 0;
+    height: 72px; }
+  .nav .navtoogle {
+    padding-top: 20px; }
+  .nav .navtoogle {
+    margin: 0;
+    display: block; }
+  header nav {
+    width: 100%;
+    position: absolute;
+    left: 0px;
+    background: #fff; }
+  .nav li {
+    float: none;
+    width: 100%; }
+  .no-js .nav ul {
+    max-height: 30em;
+    overflow: hidden; }
+  /* When JavaScript is enabled, we hide the menu */
+  .js .nav ul {
+    max-height: 0em;
+    overflow: hidden; }
+  /* Displaying the menu when the user has clicked on the button*/
+  .js .nav .active + ul {
+    max-height: 30em;
+    overflow: hidden;
+    -webkit-transition: max-height .4s;
+    -moz-transition: max-height .4s;
+    -o-transition: max-height .4s;
+    -ms-transition: max-height .4s;
+    transition: max-height .4s; } }
